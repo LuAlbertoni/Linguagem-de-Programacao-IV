@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Light";
+  src: url(../assets/fonts/iFoodRCTextos-Light.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Thin";
+  src: url(../assets/fonts/iFoodRCTextos-Thin.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Medium";
+  src: url(../assets/fonts/iFoodRCTextos-Medium.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Regular";
+  src: url(../assets/fonts/iFoodRCTextos-Regular.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Bold";
+  src: url(../assets/fonts/iFoodRCTextos-Bold.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-ExtraBold";
+  src: url(../assets/fonts/iFoodRCTextos-ExtraBold.ttf);
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cartoon::before {
+  content: "";
+  position: absolute;
+  width: 80vw;
+  height: 80vw;
+  left: 25%;
+  top: -40%;
+  background-color: #fdedee;
+  border-radius: 0 100% 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.cartoon {
+  max-width: 510px;
+}
+
+.cartoon img {
+  width: 100%;
+}
+
+.login-container {
+  max-width: 510px;
+  margin: 0 auto;
+  padding: 50px 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h1 {
+  margin: 0 20%;
+  font-size: 2.5rem;
+  color: #414143;
+  font-family: "iFoodRCTextos-Regular";
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #717171;
+  font-family: "iFoodRCTextos-Thin";
+}
+
+.button-01,
+.button-facebook,
+.button-google,
+.button-02 {
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "iFoodRCTextos-Regular";
+}
+
+.button-01,
+.button-02 {
+  border: 1px solid #e0e0e0;
+  width: max-content;
+  margin: 10px auto 0;
+}
+
+.button-01 img {
+  width: 20px;
+  float: left;
+  margin-left: 10px;
+}
+
+.button-facebook {
+  background: #4065b4;
+  color: #fff;
+  width: 90%;
+  padding: 15px 0;
+  font-size: 1.1rem;
+}
+
+.button-facebook img {
+  width: 25px;
+  margin-left: 20px;
+}
+
+.button-facebook:hover {
+  background: #6081c7;
+  transition: 0.5s;
+}
+
+.button-google {
+  background: #fff;
+  color: #000;
+  width: 85%;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.button-02 {
+  width: 48%;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  padding: 15px 0;
+  background-color: #fff;
+  color: #a6a6a6;
+}
+
+.button-02:hover {
+  color: #fff;
+  background-color: #ea1d2c;
+  transition: 0.3s;
+}
+
+.cel-mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto 0;
+}
