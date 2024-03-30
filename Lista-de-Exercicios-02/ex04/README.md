@@ -20,6 +20,7 @@ Saída = 4 X 0 = 0...4 X 10 = 40.
 
 Suponha que o usuário digite o número 5. A saída exibida no navegador será:
 
+```html
 5 x 0 = 0
 5 x 1 = 5
 5 x 2 = 10
@@ -31,3 +32,4 @@ Suponha que o usuário digite o número 5. A saída exibida no navegador será:
 5 x 8 = 40
 5 x 9 = 45
 5 x 10 = 50
+```

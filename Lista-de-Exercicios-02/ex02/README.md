@@ -16,4 +16,8 @@ Escreva um programa que leia 7 números diferentes, imprima o menor valor e impr
 
 ## Exemplo de Uso
 
-Suponha que o usuário digite os números 5, 3, 8, 2, 9, 1 e 7. A saída exibida no navegador será "O menor valor é 1 e está na posição 6".
+Suponha que o usuário digite os números 5, 3, 8, 2, 9, 1 e 7. A saída exibida no navegador será:
+
+```html
+"O menor valor é 1 e está na posição 6".
+```

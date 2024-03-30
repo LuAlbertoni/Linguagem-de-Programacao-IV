@@ -17,4 +17,8 @@ iguais, retorne o triplo da soma.
 
 ## Exemplo de Uso
 
-Suponha que o usuário digite os números 5 e 5. A saída exibida no navegador será "O triplo da soma é 30".
+Suponha que o usuário digite os números 5 e 5. A saída exibida no navegador será:
+
+```html
+"O triplo da soma é 30"
+```
