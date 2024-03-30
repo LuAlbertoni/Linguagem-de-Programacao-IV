@@ -7,7 +7,7 @@ Faça um programa em PHP no qual leia um valor em metros e o converta em centím
 1. Certifique-se de ter um servidor web configurado (por exemplo, XAMPP) para executar o código PHP.
 2. Clone o repositório e copie a pasta `ex07` para o diretório raiz do servidor web.
 3. Abra o navegador e acesse `localhost/ex07`.
-4. Digite os números A e B nos campos de entrada e clique no botão "Enviar".
+4. Digite o número no campo de entrada e clique no botão "Enviar".
 
 ## Arquivos
 
