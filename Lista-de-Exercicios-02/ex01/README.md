@@ -19,5 +19,5 @@ Crie um algoritmo que receba um número digitado pelo usuário e verifique se es
 Suponha que o usuário digite o número -5. A saída exibida no navegador será:
 
 ```html
- "Valor Negativo"
+"Valor Negativo"
 ```

@@ -10,7 +10,7 @@
 <body>
     <form action="script.php" method="post">
         <label for="val">Digite um valor:</label>
-        <input type="number" name="val" id="val">
+        <input type="text" name="val" id="val">
         <button type="submit">Enviar</button>
     </form>
 </body>

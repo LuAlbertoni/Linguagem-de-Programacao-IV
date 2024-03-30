@@ -10,7 +10,7 @@
 <body>
     <form action="script.php" method="post">
         <label for="metros">Metros quadrados a serem pintados:</label>
-        <input type="number" name="metros" id="metros" required>
+        <input type="text" name="metros" id="metros" required>
         <button type="submit">Calcular</button>
     </form>
 </body>
