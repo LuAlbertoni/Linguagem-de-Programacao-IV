@@ -378,6 +378,77 @@ footer {
 }
 
 @media screen and (max-width: 1024px), (min-width: 1600px) {
+  .extra-footer p {
+    font-size: 0.9rem;
+  }
+
+  .footer-column h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-column ul li {
+    font-size: 1.2rem;
+  }
+  .top-content {
+    padding: 1rem 0px 3rem 0px;
+  }
+
+  nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  .button-01,
+  .button-02 {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .header-content-01 p,
+  .conheca-content-info p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+
+  .news {
+    padding: 4rem;
+  }
+
+  .news h5 {
+    font-size: 1.2rem;
+  }
+
+  .news h2 {
+    font-size: 2.2rem;
+  }
+
+  .news .cards {
+    margin: 4rem auto;
+  }
+
+  .news h4 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .news p {
+    font-size: 0.9rem;
+    margin: 1rem auto;
+  }
+
+  .news span {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   header {
     height: fit-content;
   }
@@ -425,22 +496,12 @@ footer {
 
   nav ul li a {
     padding: 1rem 0;
-    font-size: 1.4rem;
     color: #000;
   }
 
   .button-01,
   .button-02 {
-    font-size: 1rem;
     align-self: center;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 2rem;
   }
 
   .header-content,
@@ -467,14 +528,7 @@ footer {
     margin-top: 2rem;
   }
 
-  .header-content-01 p,
-  .conheca-content-info p {
-    font-size: 1.3rem;
-    margin: 1rem 0;
-  }
-
   .news {
-    padding: 1rem;
     text-align: center;
   }
 
@@ -486,29 +540,6 @@ footer {
     margin: 1rem 0;
   }
 
-  .news h5 {
-    font-size: 1.2rem;
-  }
-
-  .news h2 {
-    font-size: 2.2rem;
-  }
-
-  .news h4 {
-    font-size: 1.5rem;
-    margin: 1rem auto;
-  }
-
-  .news p {
-    font-size: 0.9rem;
-    margin: 1rem auto;
-  }
-
-  .news span {
-    font-size: 0.9rem;
-    margin: 1rem 0;
-  }
-
   .footer-columns,
   .extra-footer-content {
     flex-direction: column;
@@ -516,17 +547,14 @@ footer {
   }
 
   .footer-column h3 {
-    font-size: 1.1rem;
     margin-bottom: 15px;
   }
 
   .footer-column ul li {
-    font-size: 1.2rem;
     margin-bottom: 10px;
   }
 
   .extra-footer p {
-    font-size: 0.9rem;
     text-align: center;
     margin: 1rem auto;
   }
