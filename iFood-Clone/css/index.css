@@ -1,0 +1,708 @@
+body {
+  margin: 0;
+  font-family: "iFoodRCTextos-Regular", helvetica, sans-serif;
+  font-size: 16px;
+  color: #3e3e3e;
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Light";
+  src: url(../assets/fonts/iFoodRCTextos-Light.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Thin";
+  src: url(../assets/fonts/iFoodRCTextos-Thin.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Medium";
+  src: url(../assets/fonts/iFoodRCTextos-Medium.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Regular";
+  src: url(../assets/fonts/iFoodRCTextos-Regular.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-Bold";
+  src: url(../assets/fonts/iFoodRCTextos-Bold.ttf);
+}
+
+@font-face {
+  font-family: "iFoodRCTextos-ExtraBold";
+  src: url(../assets/fonts/iFoodRCTextos-ExtraBold.ttf);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  max-width: 1200px;
+}
+
+.logo-nav-container img {
+  max-width: 88px;
+}
+
+nav,
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a,
+.secundary-menu a {
+  text-decoration: none;
+  color: #3e3e3e;
+}
+
+.secundary-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.secundary-menu a,
+.secundary-menu button {
+  margin-left: 40px;
+}
+
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-01 {
+  background-color: #ea1d2c;
+  color: white;
+  padding: 14px 27px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "iFoodRCTextos-Regular";
+}
+
+.button-01:hover {
+  background-color: #ee4c58;
+}
+
+.search {
+  background-image: url("../assets/img/home/desktop-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: 120px;
+}
+
+.search-container,
+.search-container h1,
+.search-container p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.search-container h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.search-container p {
+  font-family: "iFoodRCTextos-Light";
+  font-size: 18px;
+  margin: 5px;
+  text-align: center;
+}
+
+.search-container form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-container input {
+  padding: 14px 25px;
+  margin-right: 10px;
+  min-width: 360px;
+  border: none;
+  border-radius: 6px;
+  width: max-content;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  font-family: "iFoodRCTextos-Light";
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search-container input::placeholder {
+  font-family: "iFoodRCTextos-Light";
+}
+
+.categories {
+  grid-template-columns: repeat(7, 1fr);
+  margin: 40px auto;
+  justify-items: center;
+  gap: 10px;
+  display: grid;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.category {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 12px 16px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #3e3e3e;
+  font-size: 14px;
+  font-family: "iFoodRCTextos-Light";
+}
+
+.multi-categories-wrapper,
+.multi-categories-carousel {
+  width: 60%;
+  max-width: 842px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.restaurante,
+.mercado {
+  display: flex;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: white;
+  height: auto;
+  width: 48%;
+}
+
+.restaurante {
+  background-color: #ea1d2c;
+}
+
+.mercado {
+  background-color: #b6d048;
+}
+
+.restaurante-info,
+.mercado-info {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.restaurante button,
+.mercado button {
+  font-weight: 200;
+  color: white;
+  border: none;
+  margin: 0;
+  padding: 10px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.restaurante button,
+.mercado button {
+  font-family: "iFoodRCTextos-Medium";
+  font-size: 16px;
+}
+
+.mercado button {
+  background-color: #9eb53e;
+}
+
+.restaurante button {
+  background-color: #cc1825;
+}
+
+.carousel-item {
+  width: 188px;
+  position: relative;
+}
+
+.carousel-item img {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.carousel-item-background::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.carousel-item:nth-child(1) .carousel-item-background::before {
+  background-color: #f6d553;
+}
+
+.carousel-item:nth-child(2) .carousel-item-background::before {
+  background-color: #f9879c;
+}
+
+.carousel-item:nth-child(3) .carousel-item-background::before {
+  background-color: #f7f7f7;
+}
+
+.restaurante:hover,
+.mercado:hover,
+.carousel-item:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s;
+}
+
+.rest aurante:hover,
+.mercado:hover,
+.carousel-item-background:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.carousel-item p {
+  font-family: "iFoodRCTextos-Medium";
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.line {
+  display: block;
+  width: 85%;
+  height: 1px;
+  background-color: #f2f2f2;
+  margin: 40px auto;
+}
+
+.melhores-restaurantes,
+.melhores-mercados,
+.info-banners {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.restaurantes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.restaurante-card {
+  display: flex;
+  border-radius: 10px;
+  padding: 30px 5px;
+  border: 1px solid #dcdcdc;
+  width: auto;
+  cursor: pointer;
+}
+
+.restaurante-card-info {
+  flex-direction: column;
+}
+
+.restaurante-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto 20px;
+}
+
+.restaurante-card-title {
+  font-family: "iFoodRCTextos-Medium";
+  margin: 10px 0;
+}
+
+.restaurante-card-description {
+  font-family: "iFoodRCTextos-Regular";
+  font-size: 14px;
+  color: #3e3e3e;
+}
+
+.landing-cards {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-cards img {
+  width: 30%;
+}
+
+.landing-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.landing-group {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.landing-group-01 {
+  justify-content: center;
+}
+
+.landing-group-01 img {
+  width: 100%;
+}
+
+.landing-group-02 {
+  flex-direction: column;
+}
+
+.landing-group-02 h3,
+.info-banner-01-text h3 {
+  font-family: "iFoodRCTextos-Regular";
+  font-size: 28px;
+}
+
+.info-banner-01 {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.info-banner-01 img {
+  width: 50%;
+}
+
+.info-banner-01-text {
+  margin: 0 40px;
+}
+
+.info-banner-02 {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  width: 80%;
+}
+
+.info-banner-02 img {
+  width: 100%;
+}
+
+footer {
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 40px 0;
+  width: 80%;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-column h3 {
+  font-size: 1.1vw;
+  color: #3e3e3e;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  font-size: 1.2vw;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #717171;
+}
+
+.extra-footer {
+  padding: 1rem 0;
+  display: flex;
+}
+
+.extra-footer img {
+  max-width: 88px;
+  margin-right: 20px;
+}
+
+.extra-footer p {
+  font-size: 0.9vw;
+  margin: 0;
+}
+
+.extra-footer-content-01,
+.extra-footer-content-02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.extra-footer-content-02 ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.extra-footer-content-02 ul li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu-hamburguer {
+  display: none;
+}
+
+@media screen and (max-width: 1024px), (min-width: 1600px) {
+  .footer-column h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-column ul li {
+    font-size: 1.2rem;
+  }
+
+  .extra-footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
+    body {
+      font-size: 14px;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .header-content {
+      width: 100%;
+      padding: 20px;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .secundary-menu {
+      justify-content: flex-start;
+      margin-left: 0;
+    }
+
+    .search-container,
+    .search-container h1,
+    .search-container p {
+      text-align: center;
+      width: 100%;
+    }
+
+    .search-container form {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .search-container input {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    .search-container button {
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    .categories {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .multi-categories-wrapper,
+    .multi-categories-carousel {
+      flex-direction: column;
+      width: 100%;
+      max-width: none;
+      align-items: center;
+    }
+
+    .restaurante,
+    .mercado {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .restaurantes {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .landing-cards,
+    .landing-links {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .landing-cards img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .landing-group {
+      grid-template-columns: 1fr;
+    }
+
+    .landing-group-01 img {
+      width: 50%;
+    }
+
+    .info-banners {
+      width: 100%;
+      text-align: center;
+    }
+
+    .info-banner-01,
+    .info-banner-02 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .info-banner-01 img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .info-banner-02 {
+      width: 100%;
+    }
+
+    .footer-columns {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem 0;
+    }
+
+    .footer-column {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .extra-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .extra-footer-content-01 {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .extra-footer-content-02 {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .extra-footer-content-02 ul {
+      flex-direction: column;
+    }
+
+    .extra-footer-content-02 ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    .menu-hamburguer {
+      margin-right: 1rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+    }
+
+    .menu-hamburguer div {
+      width: 30px;
+      height: 3px;
+      background-color: rgb(113, 113, 113);
+      margin: 4px 0;
+    }
+
+    .active {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      left: 0;
+      border-radius: 0 0 10px 10px;
+    }
+
+    nav ul li {
+      margin: 0;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+  }
+}
