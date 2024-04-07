@@ -58,17 +58,21 @@ body {
 .cartoon::before {
   content: "";
   position: absolute;
-  width: 80vw;
-  height: 80vw;
+  min-width: 130vh;
+  min-height: 130vh;
+  width: 130vw;
+  height: 130vw;
   left: 25%;
-  top: -40%;
+  top: -10%;
   background-color: #fdedee;
   border-radius: 0 100% 100%;
   transform: translateX(-50%);
+  vertical-align: middle;
   z-index: -1;
 }
 
 .cartoon {
+  width: 40%;
   max-width: 510px;
 }
 
@@ -168,4 +172,62 @@ h2 {
   align-items: center;
   width: 90%;
   margin: 20px auto 0;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cartoon::before {
+    display: none;
+  }
+
+  .cartoon {
+    width: 35%;
+    min-width: 300px;
+  }
+
+  .login-container {
+    max-width: 100%;
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .logo {
+    left: initial;
+    margin: 0 auto;
+  }
+
+  .cartoon {
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .button-facebook {
+    width: 98%;
+  }
+
+  .button-google {
+    width: 60%;
+  }
+
+  .button-02 {
+    margin-top: 10px;
+  }
+
+  .cel-mail {
+    width: 100%;
+  }
 }
