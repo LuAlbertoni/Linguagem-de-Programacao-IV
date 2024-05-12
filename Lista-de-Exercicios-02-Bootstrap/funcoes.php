@@ -36,3 +36,14 @@ function calcularSoma($val1, $val2)
         return $val1 + $val2;
     }
 }
+
+function gerarTabuada($num)
+{
+    $tabuada = array();
+
+    for ($i = 0; $i <= 10; $i++) {
+        $tabuada[] = "$num x $i = " . $num * $i;
+    }
+
+    return $tabuada;
+}
