@@ -96,3 +96,22 @@ function calcularIdade($ano)
 
     return array('idade' => $idade, 'dias' => $dias, 'idade2025' => $idade2025);
 }
+
+function calcularIMC($peso, $altura)
+{
+    $imc = $peso / ($altura ** 2);
+    return $imc;
+}
+
+function classificarIMC($imc)
+{
+    if ($imc < 18.5) {
+        return "baixo peso";
+    } elseif ($imc < 25) {
+        return "adequado (eutrófico)";
+    } elseif ($imc < 30) {
+        return "sobrepeso";
+    } else {
+        return "obesidade";
+    }
+}
