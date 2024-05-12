@@ -47,3 +47,14 @@ function gerarTabuada($num)
 
     return $tabuada;
 }
+
+function calcularFatorial($num)
+{
+    $fat = 1;
+
+    for ($i = $num; $i > 0; $i--) {
+        $fat *= $i;
+    }
+
+    return $fat;
+}
