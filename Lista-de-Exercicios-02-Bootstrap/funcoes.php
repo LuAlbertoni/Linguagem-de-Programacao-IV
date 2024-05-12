@@ -58,3 +58,16 @@ function calcularFatorial($num)
 
     return $fat;
 }
+
+function compararNumeros($a, $b)
+{
+    if ($a == $b) {
+        return "Números iguais: $a";
+    } else {
+        if ($a < $b) {
+            return "$a $b";
+        } else {
+            return "$b $a";
+        }
+    }
+}
