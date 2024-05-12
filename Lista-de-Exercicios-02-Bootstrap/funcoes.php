@@ -77,3 +77,12 @@ function converterMetrosParaCentimetros($metros)
     $centimetros = $metros * 100;
     return $centimetros;
 }
+
+function calcularQuantidadeETotal($metros)
+{
+    $litros = $metros / 3;
+    $latas = ceil($litros / 18);
+    $preco = $latas * 80;
+
+    return array('latas' => $latas, 'preco' => $preco);
+}
