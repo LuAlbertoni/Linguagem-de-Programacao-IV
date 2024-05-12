@@ -71,3 +71,9 @@ function compararNumeros($a, $b)
         }
     }
 }
+
+function converterMetrosParaCentimetros($metros)
+{
+    $centimetros = $metros * 100;
+    return $centimetros;
+}
