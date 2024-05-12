@@ -86,3 +86,13 @@ function calcularQuantidadeETotal($metros)
 
     return array('latas' => $latas, 'preco' => $preco);
 }
+
+function calcularIdade($ano)
+{
+    $anoAtual = date('Y');
+    $idade = $anoAtual - $ano;
+    $dias = $idade * 365;
+    $idade2025 = 2025 - $ano;
+
+    return array('idade' => $idade, 'dias' => $dias, 'idade2025' => $idade2025);
+}
