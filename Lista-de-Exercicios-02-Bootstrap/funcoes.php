@@ -12,3 +12,18 @@ function positivoNegativo($val)
         return "Valor inválido";
     }
 }
+
+function encontrarMenor($valores)
+{
+    $menor = $valores[0];
+    $posicao = 0;
+
+    foreach ($valores as $chave => $valor) {
+        if ($valor < $menor) {
+            $menor = $valor;
+            $posicao = $chave + 1;
+        }
+    }
+
+    return array('val' => $menor, 'pos' => $posicao);
+}
