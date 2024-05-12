@@ -27,3 +27,12 @@ function encontrarMenor($valores)
 
     return array('val' => $menor, 'pos' => $posicao);
 }
+
+function calcularSoma($val1, $val2)
+{
+    if ($val1 == $val2) {
+        return ($val1 + $val2) * 3;
+    } else {
+        return $val1 + $val2;
+    }
+}
