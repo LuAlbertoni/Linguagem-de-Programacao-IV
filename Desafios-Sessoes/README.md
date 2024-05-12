@@ -19,10 +19,10 @@ Este desafio consiste em escrever um programa em PHP para validar um lote de che
 
 Cada desafio terá seu próprio arquivo PHP para executar e testar individualmente.
 
-### Desafio 1
+### Desafio 01
 
 Para executar o primeiro desafio, basta acessar o arquivo `ex01.php` e seguir as instruções para inserir os tempos das voltas
 
-### Desafio 2
+### Desafio 02
 
 Para executar o segundo desafio, utilize o arquivo `ex02.php` e siga as instruções para inserir os valores dos cheques
