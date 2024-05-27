@@ -30,7 +30,7 @@ require_once('../header.php');
                         <td><?= $membro['Nome'] ?></td>
                         <td><?= $aula['Nome'] ?></td>
                         <td>
-                            <button class="btn btn-danger" onclick="if(confirm('Deseja realmente excluir esta participação?')) window.location.href = 'index.php?id=<?= $membroId ?>&id=<?= $aulaId ?>'">
+                            <button class="btn btn-danger" onclick="if(confirm('Deseja realmente excluir esta participação?')) window.location.href = 'index.php?membroId=<?= $membroId ?>&aulaId=<?= $aulaId ?>'">
                                 Excluir
                             </button>
                         </td>
@@ -44,8 +44,9 @@ require_once('../header.php');
 </div>
 
 <?php
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
+if (isset($_GET['membroId']) && isset($_GET['aulaId'])) {
+    $membroId = $_GET['membroId'];
+    $aulaId = $_GET['aulaId'];
     if (deletarParticipacao($membroId, $aulaId)) {
         echo "<div class='alert alert-success mt-3'>Participação excluída com sucesso!</div>";
         echo "<script>setTimeout(() => { window.location.href = 'index.php'; }, 1000);</script>";
