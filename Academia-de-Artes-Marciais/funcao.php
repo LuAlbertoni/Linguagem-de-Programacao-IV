@@ -129,7 +129,8 @@ function buscarInstrutorPorId($id)
         $sql = "SELECT * FROM Instrutores WHERE ID = :id";
         $stmt = $conexao->prepare($sql);
         $stmt->bindValue(':id', $id);
-        return $stmt->execute();
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
         return 0;
     }
@@ -142,7 +143,8 @@ function buscarAulaPorId($id)
         $sql = "SELECT * FROM Aulas WHERE ID = :id";
         $stmt = $conexao->prepare($sql);
         $stmt->bindValue(':id', $id);
-        return $stmt->execute();
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
         return 0;
     }
