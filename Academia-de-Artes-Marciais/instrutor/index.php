@@ -47,7 +47,7 @@ if (isset($_GET['id'])) {
         echo "<div class='alert alert-success mt-3'>Instrutor excluído com sucesso!</div>";
         echo "<script>setTimeout(() => { window.location.href = 'index.php'; }, 1000);</script>";
     } else {
-        echo "<div class='alert alert-danger mt-3'>Erro ao excluir membro!</div>";
+        echo "<div class='alert alert-danger mt-3'>Erro ao excluir instrutor!</div>";
     }
 }
 
