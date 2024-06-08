@@ -14,6 +14,7 @@ require_once('../header.php');
                 <th>Nome</th>
                 <th>Horário</th>
                 <th>Instrutor</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>

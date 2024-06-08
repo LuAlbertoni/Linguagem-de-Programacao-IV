@@ -12,6 +12,7 @@ require_once('../header.php');
             <tr>
                 <th>Membro</th>
                 <th>Aula</th>
+                <th>Ação</th>
             </tr>
         </thead>
         <tbody>

@@ -14,7 +14,7 @@
             <h1 class="display-5">Academia de Artes Marciais</h1>
         </a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -36,9 +36,11 @@
         </nav>
     </header>
 
-
     <main class="container">
         <?php
         require_once("funcao.php");
         if (conectarBanco())
             echo "<script>console.log('Conectado ao banco de dados');</script>";
+        else {
+            echo "<div class='alert alert-danger' role='alert'>Erro ao conectar ao banco de dados</div>";
+        }

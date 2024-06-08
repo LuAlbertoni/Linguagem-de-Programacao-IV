@@ -2,8 +2,12 @@
 
 function conectarBanco()
 {
-    $conexao = new PDO("mysql:host=localhost:3306; dbname=AcademiaArtesMarciais", "root", "");
-    return $conexao;
+    try {
+        $conexao = new PDO("mysql:host=localhost:3306; dbname=AcademiaArtesMarciais", "root", "");
+        return $conexao;
+    } catch (Exception $e) {
+        return 0;
+    }
 }
 
 function adicionarMembro($nome, $idade, $tipoPlano)
